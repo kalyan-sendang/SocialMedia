@@ -112,11 +112,8 @@ export const followUser = async (req, res) => {
 }// unfollow a user
 export const UnfollowUser = async (req, res) => {
     const id = req.params.id; //id who will be followed
-
     const { _id } = req.body;//id that follows
-
     if (_id === id) {
-
         res.status(403).json("Action prohibited");
     } else {
         try {

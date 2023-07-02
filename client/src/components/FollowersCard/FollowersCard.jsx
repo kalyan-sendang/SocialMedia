@@ -6,7 +6,8 @@ import { getAllUser } from '../../api/UserRequest'
 
 function FollowersCard() {
     const [persons, setPersons] = useState([])
-    const { user } = useSelector((state) => state.authReducer.authData);
+    const { user } = useSelector((state) => state.authReducer.authData)
+
 
     useEffect(() => {
         const fetchPersons = async () => {
